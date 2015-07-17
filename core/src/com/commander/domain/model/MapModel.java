@@ -8,9 +8,9 @@ public class MapModel
     private static final double MAX_COST = 10000;
     private MapChipEntity[][] map;
 
-    public MapModel()
+    public MapModel(MapChipEntity[][] map)
     {
-
+        this.map = map;
     }
 
     public boolean isMovablePlace(Vector2 place)

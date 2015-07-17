@@ -17,17 +17,18 @@ public class MapChipFileAccessor extends CsvFileAccessor
     {
         MapChipEntity entity = new MapChipEntity();
         entity.id = Integer.parseInt(record[0]);
-        entity.imageKey = record[1];
-        entity.chipType = record[2].charAt(0);
-        entity.isMovable = record[3].equalsIgnoreCase("1") ? true : false;
-        entity.move = Double.parseDouble(record[4]);
-        entity.recover = Double.parseDouble(record[5]);
-        entity.attack = Double.parseDouble(record[6]);
-        entity.defence = Double.parseDouble(record[7]);
-        entity.hit = Double.parseDouble(record[8]);
-        entity.avoid = Double.parseDouble(record[9]);
-        entity.magicAttack = Double.parseDouble(record[10]);
-        entity.magicDefense = Double.parseDouble(record[11]);
+        entity.name = record[1];
+        entity.imageKey = record[2];
+        entity.chipType = record[3].charAt(0);
+        entity.isMovable = record[4].equalsIgnoreCase("1") ? true : false;
+        entity.move = Double.parseDouble(record[5]);
+        entity.recover = Double.parseDouble(record[6]);
+        entity.attack = Double.parseDouble(record[7]);
+        entity.defence = Double.parseDouble(record[8]);
+        entity.hit = Double.parseDouble(record[9]);
+        entity.avoid = Double.parseDouble(record[10]);
+        entity.magicAttack = Double.parseDouble(record[11]);
+        entity.magicDefense = Double.parseDouble(record[12]);
         return entity;
     }
 

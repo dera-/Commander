@@ -13,4 +13,5 @@ public class MapChipEntity extends BaseEntity
     public double magicAttack;
     public double magicDefense;
     public String imageKey;
+    public String name;
 }

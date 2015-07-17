@@ -14,10 +14,11 @@ public class RecoverSkillFileAccessor extends CsvFileAccessor {
     protected BaseEntity getBaseEntity(String[] record) {
         RecoverSkillEntity entity = new RecoverSkillEntity();
         entity.id = Integer.parseInt(record[0]);
-        entity.limit = Integer.parseInt(record[1]);
-        entity.range = Integer.parseInt(record[2]);
-        entity.recover = Integer.parseInt(record[3]);
-        entity.recoverRange = Integer.parseInt(record[4]);
+        entity.imageKey = record[1];
+        entity.limit = Integer.parseInt(record[2]);
+        entity.range = Integer.parseInt(record[3]);
+        entity.recover = Integer.parseInt(record[4]);
+        entity.recoverRange = Integer.parseInt(record[5]);
         return entity;
     }
 

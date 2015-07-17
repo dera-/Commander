@@ -2,6 +2,8 @@ package com.commander.infrastructure.entity;
 
 public class CharacterEntity extends BaseEntity
 {
+    public String name;
+    public String imageKey;
     public int hp;
     public int attack;
     public int defense;
@@ -13,5 +15,4 @@ public class CharacterEntity extends BaseEntity
     public int speed;
     public int move;
     public int brainId;
-    public String imageKey;
 }

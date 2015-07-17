@@ -4,23 +4,29 @@ import java.io.File;
 
 public class FileConfig {
     public static final boolean USE_INNER_FILE = true;
-    public static final String FILE_DIR_PATH = "file";
-    public static final String IMAGE_DIR_PATH = "image";
-    public static final String FONT_DIR_PATH = "font";
-    public static final String STAGE_DIR_PATH = "stage";
+    public static final String FILE_DIR_PATH = "file" + File.separator;
+    public static final String IMAGE_DIR_PATH = "image" + File.separator;
+    public static final String FONT_DIR_PATH = "font" + File.separator;
+    public static final String STAGE_DIR_PATH = "stage" + File.separator;
     public static final String MAP_FILE_PREFIX = "map_";
     public static final String CHARACTERS_FILE_PREFIX = "characters_";
     public static final String FILE_FORMAT = ".csv";
     public static final String IMAGE_FORMAT = ".gif";
     public static final String IMAGE_FORMAT_PNG = ".png";
     public static final String TEXT_FORMAT = ".txt";
-    public static final String CHARACTER_FILE_PATH = FILE_DIR_PATH + File.separator + "characters" + FILE_FORMAT;
-    public static final String ATTACK_SKILL_FILE_PATH = FILE_DIR_PATH + File.separator + "attackskills" + FILE_FORMAT;
-    public static final String DEFENSE_SKILL_FILE_PATH = FILE_DIR_PATH + File.separator + "defenseskills" + FILE_FORMAT;
-    public static final String RECOVER_SKILL_FILE_PATH = FILE_DIR_PATH + File.separator + "recoverskills" + FILE_FORMAT;
-    public static final String CHARACTER_SKILL_FILE_PATH = FILE_DIR_PATH + File.separator + "charactersskills" + FILE_FORMAT;
-    public static final String MAPCHIP_FILE_PATH = FILE_DIR_PATH + File.separator + "mapchips" + FILE_FORMAT;
-    public static final String BRAIN_FILE_PATH = FILE_DIR_PATH + File.separator + "brains" + FILE_FORMAT;
+    public static final String CHARACTER_FILE_PATH = FILE_DIR_PATH + "characters" + FILE_FORMAT;
+    public static final String ATTACK_SKILL_FILE_PATH = FILE_DIR_PATH + "attackskills" + FILE_FORMAT;
+    public static final String DEFENSE_SKILL_FILE_PATH = FILE_DIR_PATH + "defenseskills" + FILE_FORMAT;
+    public static final String RECOVER_SKILL_FILE_PATH = FILE_DIR_PATH + "recoverskills" + FILE_FORMAT;
+    public static final String CHARACTER_SKILL_FILE_PATH = FILE_DIR_PATH + "charactersskills" + FILE_FORMAT;
+    public static final String MAPCHIP_FILE_PATH = FILE_DIR_PATH + "mapchips" + FILE_FORMAT;
+    public static final String BRAIN_FILE_PATH = FILE_DIR_PATH + "brains" + FILE_FORMAT;
+    public static final String CHARACTER_DOT_FILE_PREFIX = "dot_";
+
+
+
+
+
     public static final String CHARA_EXPRESSION_KEY_NORMAL = "normal";
     public static final String CHARA_EXPRESSION_KEY_WAIT = "wait";
     public static final String CHARA_EXPRESSION_KEY_ATTACK = "attack";

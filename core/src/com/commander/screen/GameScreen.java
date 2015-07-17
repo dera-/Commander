@@ -67,10 +67,10 @@ public abstract class GameScreen implements Screen
     public void render(float delta)
     {
         update(delta);
-        draw();
         if (view instanceof AnimationView) {
             ((AnimationView)view).animation(delta);
         }
+        draw();
     }
 
     private void draw()

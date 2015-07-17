@@ -1,6 +1,7 @@
 package com.commander.domain.model;
 
 import com.badlogic.gdx.math.Vector2;
+import com.commander.domain.factory.BrainModelFactory;
 import com.commander.domain.valueobject.CharacterType;
 import com.commander.infrastructure.entity.CharacterEntity;
 import com.commander.infrastructure.entity.SkillEntity;
@@ -24,12 +25,13 @@ public class CharacterModel
     private int currentHp;
     private Vector2 currentPlace;
     private Vector2[] movingRoute;
+    private BrainModel brain;
     private static final Vector2[] NO_ROOT = new Vector2[0];
 
     public CharacterModel(int id, int charaType, CharacterEntity entity, SkillEntity[] skillEntitys, Vector2 place)
     {
         this.id = id;
-        charaType = charaType;
+        this.charaType = charaType;
         maxHp = entity.hp;
         currentHp = entity.hp;
         attack = entity.attack;
@@ -42,6 +44,7 @@ public class CharacterModel
         speed = entity.speed;
         move = entity.move;
         skills = skillEntitys;
+        brain = BrainModelFactory.getBrainModel(entity.brainId);
         currentPlace = new Vector2(place.x, place.y);
         movingRoute = NO_ROOT;
     }

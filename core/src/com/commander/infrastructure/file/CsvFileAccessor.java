@@ -34,7 +34,7 @@ public abstract class CsvFileAccessor
         try {
             reader = new BufferedReader(new InputStreamReader(csvFileHandle.read(), "SJIS"));
             int index = getColumnIndex(reader.readLine().split(DELIMITER), columnName);
-            if(index == NOT_FOUND_COLUMN){
+            if (index == NOT_FOUND_COLUMN) {
                 return new BaseEntity[0];
             }
             String line;

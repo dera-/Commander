@@ -10,7 +10,13 @@ public class CharacterModelRepository
     private static Array<CharacterModel> currentCharacters;
     private static Array<ActionSpeedModel> actionSpeeds;
 
-    public static void setCharacters(Array<CharacterModel> characters)
+    public static void initialize()
+    {
+        currentCharacters.clear();
+        actionSpeeds.clear();
+    }
+
+    public static void setCharacters(CharacterModel[] characters)
     {
         currentCharacters.addAll(characters);
     }

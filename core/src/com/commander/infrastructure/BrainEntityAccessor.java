@@ -1,5 +1,6 @@
 package com.commander.infrastructure;
 
+import com.commander.infrastructure.entity.BrainEntity;
 import com.commander.infrastructure.file.BrainFileAccessor;
 
 public class BrainEntityAccessor extends EntityAccessor

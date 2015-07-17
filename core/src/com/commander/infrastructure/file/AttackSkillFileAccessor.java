@@ -15,11 +15,12 @@ public class AttackSkillFileAccessor extends CsvFileAccessor
     protected BaseEntity getBaseEntity(String[] record) {
         AttackSkillEntity entity = new AttackSkillEntity();
         entity.id = Integer.parseInt(record[0]);
-        entity.limit = Integer.parseInt(record[1]);
-        entity.range = Integer.parseInt(record[2]);
-        entity.attack = Double.parseDouble(record[3]);
-        entity.hit = Double.parseDouble(record[4]);
-        entity.magicAttack = Double.parseDouble(record[5]);
+        entity.imageKey = record[1];
+        entity.limit = Integer.parseInt(record[2]);
+        entity.range = Integer.parseInt(record[3]);
+        entity.attack = Double.parseDouble(record[4]);
+        entity.hit = Double.parseDouble(record[5]);
+        entity.magicAttack = Double.parseDouble(record[6]);
         return entity;
     }
 
